@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Signup | CampusBite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="user-signup">
+    <div class="auth-wrapper">
+      <div class="auth-card" data-auth-role="user" data-auth-mode="signup">
+        <a class="logo" href="index.html">CampusBite</a>
+        <h1 id="userAuthHeading">Join CampusBite</h1>
+        <p class="subtitle" id="userAuthSubtitle">
+          Create an account to save favourites, manage carts and order faster.
+        </p>
+        <form id="userSignupForm" class="form" data-auth-form="signup">
+          <label>
+            Full Name
+            <input type="text" name="name" placeholder="Ananya Rao" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" placeholder="Create a password" minlength="6" required />
+          </label>
+          <button type="submit" class="btn btn-primary">Create account</button>
+        </form>
+        <div class="form-links">
+          <a class="link" href="login.html">Already registered? Login →</a>
+          <a class="link" href="admin-login.html">Need admin access? →</a>
+        </div>
+      </div>
+      <div class="auth-visual">
+        <img src="https://www.pngmart.com/files/16/Chicken-Biryani-PNG-Transparent-Image.png" alt="Biryani bowl" />
+      </div>
+    </div>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
+

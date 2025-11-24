@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | CampusBite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="admin-dashboard">
+    <header class="topbar">
+      <nav class="navbar">
+        <a class="logo" href="index.html">CampusBite</a>
+        <button id="adminLogoutBtn" class="btn btn-outline">Logout</button>
+      </nav>
+    </header>
+    <header class="subpage-header">
+      <div class="subpage-hero">
+        <div>
+          <p class="eyebrow">Welcome admin</p>
+          <h1>Manage dishes & pricing</h1>
+          <p>Keep the catalogue updated with new delicacies and offers.</p>
+        </div>
+        <div class="stat-strip">
+          <div>
+            <p class="label">Total items</p>
+            <strong id="adminTotalItems">0</strong>
+          </div>
+          <div>
+            <p class="label">Categories</p>
+            <strong id="adminTotalCategories">0</strong>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="admin-layout">
+      <section class="admin-table-card">
+        <header>
+          <h2>Food catalogue</h2>
+          <input type="search" id="adminSearch" placeholder="Search dishes..." />
+        </header>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Dish</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="adminItemsTable"></tbody>
+          </table>
+        </div>
+      </section>
+      <section class="admin-form-card">
+        <h2>Add new item</h2>
+        <form id="addItemForm" class="form">
+          <label>
+            Dish name
+            <input type="text" name="name" required placeholder="Example: Malai Kofta" />
+          </label>
+          <label>
+            Category
+            <input type="text" name="category" required placeholder="Main Course" />
+          </label>
+          <label>
+            Price (₹)
+            <input type="number" name="price" min="10" required />
+          </label>
+          <label>
+            Image URL (PNG)
+            <input type="url" name="image" required placeholder="https://..." />
+          </label>
+          <button type="submit" class="btn btn-primary">Add Item</button>
+        </form>
+      </section>
+    </main>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/admin.js" defer></script>
+  </body>
+</html>
+

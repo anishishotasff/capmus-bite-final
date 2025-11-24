@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmed | CampusBite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+   <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="order-confirmation">
+    <main class="confirmation-wrapper">
+      <div class="confirmation-card">
+        <div class="status-icon">✓</div>
+        <h1>Order confirmed!</h1>
+        <p class="subtitle">Sit back while we rush freshly cooked meals to you.</p>
+        <div class="order-meta">
+          <p><span>Order ID:</span> <strong id="orderId">#0000</strong></p>
+          <p><span>Items:</span> <strong id="orderItems">0 dishes</strong></p>
+          <p><span>Total Paid:</span> <strong id="orderTotal">₹0</strong></p>
+          <p><span>ETA:</span> <strong>35-45 mins</strong></p>
+        </div>
+        <div class="order-breakdown" id="orderBreakdown"></div>
+        <div class="confirmation-actions">
+          <a class="btn btn-primary" href="user-dashboard.html">Order more</a>
+          <a class="btn btn-outline" href="index.html">Back home</a>
+        </div>
+      </div>
+    </main>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/cart.js" defer></script>
+  </body>
+</html>
+

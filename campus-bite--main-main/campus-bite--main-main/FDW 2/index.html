@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusBite | Food Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="home">
+    <header class="topbar">
+      <nav class="navbar">
+        <a class="logo" href="index.html">CampusBite</a>
+        <a class="btn btn-outline" href="user-dashboard.html">Order Now</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">User Login</a></li>
+          <li><a href="admin-login.html">Admin</a></li>
+          <li><a href="cart.html" class="cart-chip">Cart<span id="cart-count"></span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">India's Finest Deliveries</p>
+          <h1>Delivering happiness one dish at a time</h1>
+          <p>
+            Explore authentic flavours crafted by top chefs. Biryani, kebabs,
+            curries, desserts and more delivered piping hot to your doorstep.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="login.html">Start Ordering</a>
+            <a class="btn btn-outline" href="#featured">See Dishes</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="img/hero-platter.png" alt="Assorted Indian dishes" />
+        </div>
+      </div>
+    </section>
+    <main>
+      <section class="categories" id="categories">
+        <p class="eyebrow">Curated Picks</p>
+        <h2>Order by craving</h2>
+        <div class="category-grid">
+          <article class="category-card">
+            <h3>Biryani & Rice</h3>
+            <p>Layered rice goodness, spiced to perfection.</p>
+          </article>
+          <article class="category-card">
+            <h3>Snacks & Starters</h3>
+            <p>Perfect bites to kickstart every meal.</p>
+          </article>
+          <article class="category-card">
+            <h3>Indian Main Course</h3>
+            <p>Rich gravies and slow-cooked classics.</p>
+          </article>
+          <article class="category-card">
+            <h3>South Indian</h3>
+            <p>Crisp dosas, fluffy idlis and tangy sambar.</p>
+          </article>
+          <article class="category-card">
+            <h3>Breads</h3>
+            <p>Soft, buttery and flame-roasted flatbreads.</p>
+          </article>
+          <article class="category-card">
+            <h3>Desserts & Drinks</h3>
+            <p>Sweet endings and refreshing sips.</p>
+          </article>
+        </div>
+      </section>
+      <section class="featured" id="featured">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Chef's Specials</p>
+            <h2>Trending this week</h2>
+          </div>
+          <a class="link" href="user-dashboard.html">Browse all dishes →</a>
+        </div>
+        <div class="food-grid" id="featured-grid"></div>
+      </section>
+      <section class="cta">
+        <div class="cta-card">
+          <h2>Stay ahead of hunger</h2>
+          <p>Login to set favourites, track orders and earn loyalty points.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="login.html">User Login</a>
+            <a class="btn btn-outline" href="admin-login.html">Admin Access</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© <span id="year"></span> CampusBite.</p>
+    </footer>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
+

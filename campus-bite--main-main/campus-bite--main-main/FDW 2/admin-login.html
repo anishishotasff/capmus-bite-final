@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login | CampusBite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="admin-login">
+    <div class="auth-wrapper">
+      <div class="auth-card" data-auth-role="admin">
+        <a class="logo" href="index.html">CampusBite</a>
+        <div class="auth-toggle-group">
+          <button type="button" class="active" data-auth-toggle="login">Login</button>
+          <button type="button" data-auth-toggle="signup">Sign Up</button>
+        </div>
+        <h1 id="adminAuthHeading">Admin Control</h1>
+        <p class="subtitle" id="adminAuthSubtitle">Enter credentials to manage the catalogue.</p>
+        <form id="adminLoginForm" class="form" data-auth-form="login">
+          <label>
+            Email
+            <input type="email" name="email" placeholder="admin@campusbite.com" required />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" placeholder="••••••••" required />
+          </label>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <form id="adminSignupForm" class="form hidden" data-auth-form="signup">
+          <label>
+            Full Name
+            <input type="text" name="name" placeholder="Operations Lead" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="admin@campusbite.com" required />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" placeholder="Create a password" minlength="6" required />
+          </label>
+          <button type="submit" class="btn btn-primary">Create admin account</button>
+        </form>
+        <p class="hint">Default credentials (seeded): admin@campusbite.com / admin123</p>
+        <div class="form-links">
+          <a class="link" href="admin-signup.html">Need to onboard a new admin? →</a>
+          <a class="link" href="login.html">User login →</a>
+        </div>
+      </div>
+      <div class="auth-visual">
+        <img src="https://www.pngmart.com/files/5/Indian-Food-PNG-Picture.png" alt="Indian platter" />
+      </div>
+    </div>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/admin.js" defer></script>
+  </body>
+</html>
+

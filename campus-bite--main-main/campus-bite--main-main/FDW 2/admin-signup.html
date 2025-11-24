@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Signup | CampusBite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="admin-signup">
+    <div class="auth-wrapper">
+      <div class="auth-card" data-auth-role="admin" data-auth-mode="signup">
+        <a class="logo" href="index.html">CampusBite</a>
+        <h1 id="adminAuthHeading">Create admin access</h1>
+        <p class="subtitle" id="adminAuthSubtitle">
+          Provision trusted teammates with catalogue and pricing control.
+        </p>
+        <form id="adminSignupForm" class="form" data-auth-form="signup">
+          <label>
+            Full Name
+            <input type="text" name="name" placeholder="Operations Lead" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="admin@campusbite.com" required />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" placeholder="Create a password" minlength="6" required />
+          </label>
+          <button type="submit" class="btn btn-primary">Create admin account</button>
+        </form>
+        <p class="hint">Seeded super-admin: admin@campusbite.com / admin123</p>
+        <div class="form-links">
+          <a class="link" href="admin-login.html">Back to admin login →</a>
+          <a class="link" href="login.html">User login →</a>
+        </div>
+      </div>
+      <div class="auth-visual">
+        <img src="https://www.pngmart.com/files/5/Indian-Food-PNG-Picture.png" alt="Indian platter" />
+      </div>
+    </div>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart | CampusBite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="cart">
+    <header class="topbar">
+      <nav class="navbar">
+        <a class="logo" href="index.html">CampusBite</a>
+        <a class="btn btn-outline" href="user-dashboard.html">Back to menu</a>
+      </nav>
+    </header>
+    <header class="subpage-header">
+      <div class="subpage-hero">
+        <div>
+          <p class="eyebrow">Hungry already?</p>
+          <h1>Review your cart</h1>
+          <p>Tweak quantities, remove items and place your order securely.</p>
+        </div>
+      </div>
+    </header>
+    <main class="cart-layout">
+      <section class="cart-items">
+        <div class="cart-list" id="cartItemsContainer"></div>
+      </section>
+      <aside class="summary-card">
+        <h2>Bill details</h2>
+        <div class="summary-list">
+          <div>
+            <span>Subtotal</span>
+            <strong id="cartSubtotal">₹0</strong>
+          </div>
+          <div>
+            <span>Delivery</span>
+            <strong id="cartDelivery">₹0</strong>
+          </div>
+          <div>
+            <span>Tax (5%)</span>
+            <strong id="cartTax">₹0</strong>
+          </div>
+        </div>
+        <div class="summary-footer">
+          <p>Payable amount</p>
+          <strong id="cartTotal">₹0</strong>
+        </div>
+        <button id="placeOrderBtn" class="btn btn-primary w-full">Place Order</button>
+      </aside>
+    </main>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/cart.js" defer></script>
+  </body>
+</html>
+

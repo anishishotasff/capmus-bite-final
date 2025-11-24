@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard | CampusBite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="user-dashboard">
+    <header class="topbar">
+      <nav class="navbar">
+        <a class="logo" href="index.html">CampusBite</a>
+        <button id="logoutBtn" class="btn btn-outline">Logout</button>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cart.html" class="cart-chip">Cart<span id="cart-count"></span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <header class="subpage-header">
+      <div class="subpage-hero">
+        <div>
+          <p class="eyebrow">Hi, foodie</p>
+          <h1>Your personalised kitchen</h1>
+          <p>Search dishes, tweak quantities and place orders within seconds.</p>
+        </div>
+        <div class="filters">
+          <input type="search" id="searchInput" placeholder="Search for biryani, dosa, chai..." />
+          <select id="categoryFilter">
+            <option value="all">All categories</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <main class="dashboard-layout">
+      <section class="food-section">
+        <div class="food-grid" id="user-food-grid"></div>
+      </section>
+      <aside class="summary-card">
+        <h2>Quick Cart</h2>
+        <p class="subtitle">Add dishes and review them anytime.</p>
+        <div class="summary-list" id="quickCartList"></div>
+        <div class="summary-footer">
+          <p>Total</p>
+          <strong id="quickCartTotal">₹0</strong>
+        </div>
+        <a class="btn btn-primary w-full" href="cart.html">Go to Cart</a>
+      </aside>
+    </main>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
+

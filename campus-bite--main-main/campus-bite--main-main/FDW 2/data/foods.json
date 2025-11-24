@@ -1,0 +1,27 @@
+[
+  { "id": "chicken-biryani", "name": "Chicken Biryani", "category": "Biryani & Rice", "price": 199, "image": "https://www.pngmart.com/files/16/Chicken-Biryani-PNG-Clipart.png" },
+  { "id": "hyderabadi-biryani", "name": "Hyderabadi Biryani", "category": "Biryani & Rice", "price": 249, "image": "https://www.pngmart.com/files/5/Biryani-PNG-File.png" },
+  { "id": "veg-biryani", "name": "Veg Biryani", "category": "Biryani & Rice", "price": 159, "image": "https://www.pngmart.com/files/5/Biryani-PNG-Transparent-Image.png" },
+  { "id": "paneer-pulao", "name": "Paneer Pulao", "category": "Biryani & Rice", "price": 149, "image": "https://www.pngmart.com/files/1/Rice-PNG-Photos.png" },
+  { "id": "chicken-65", "name": "Chicken 65", "category": "Snacks & Starters", "price": 189, "image": "https://www.pngmart.com/files/5/Fried-Chicken-PNG-Transparent-Image.png" },
+  { "id": "paneer-tikka", "name": "Paneer Tikka", "category": "Snacks & Starters", "price": 159, "image": "https://www.pngmart.com/files/1/Paneer-PNG-File.png" },
+  { "id": "samosa", "name": "Samosa", "category": "Snacks & Starters", "price": 20, "image": "https://www.pngmart.com/files/5/Samosa-PNG-Transparent-Image.png" },
+  { "id": "veg-cutlet", "name": "Veg Cutlet", "category": "Snacks & Starters", "price": 40, "image": "https://www.pngmart.com/files/5/Cutlet-PNG-Transparent-Image.png" },
+  { "id": "butter-chicken", "name": "Butter Chicken", "category": "Indian Main Course", "price": 249, "image": "https://www.pngmart.com/files/5/Butter-Chicken-PNG-Pic.png" },
+  { "id": "paneer-butter-masala", "name": "Paneer Butter Masala", "category": "Indian Main Course", "price": 199, "image": "https://www.pngmart.com/files/5/Indian-Food-PNG-Pic.png" },
+  { "id": "dal-makhani", "name": "Dal Makhani", "category": "Indian Main Course", "price": 149, "image": "https://www.pngmart.com/files/22/Dal-Makhani-PNG-Photo.png" },
+  { "id": "chole-bhature", "name": "Chole Bhature", "category": "Indian Main Course", "price": 99, "image": "https://www.pngmart.com/files/5/Poori-PNG-File.png" },
+  { "id": "masala-dosa", "name": "Masala Dosa", "category": "South Indian", "price": 79, "image": "https://www.pngmart.com/files/5/Dosa-PNG-Free-Download.png" },
+  { "id": "idli-sambar", "name": "Idli Sambar", "category": "South Indian", "price": 59, "image": "https://www.pngmart.com/files/3/Idly-PNG-Photos.png" },
+  { "id": "vada-sambar", "name": "Vada Sambar", "category": "South Indian", "price": 49, "image": "https://www.pngmart.com/files/1/Vada-Pav-PNG-Photos.png" },
+  { "id": "garlic-naan", "name": "Garlic Naan", "category": "Breads", "price": 35, "image": "https://www.pngmart.com/files/5/Naan-PNG-Image.png" },
+  { "id": "tandoori-roti", "name": "Tandoori Roti", "category": "Breads", "price": 12, "image": "https://www.pngmart.com/files/5/Roti-PNG-Pic.png" },
+  { "id": "butter-roti", "name": "Butter Roti", "category": "Breads", "price": 15, "image": "https://www.pngmart.com/files/5/Roti-PNG-Transparent-Image.png" },
+  { "id": "gulab-jamun", "name": "Gulab Jamun", "category": "Desserts", "price": 25, "image": "https://www.pngmart.com/files/15/Gulab-Jamun-PNG-Image.png" },
+  { "id": "rasmalai", "name": "Rasmalai", "category": "Desserts", "price": 40, "image": "https://www.pngmart.com/files/23/Rasmalai-PNG-File.png" },
+  { "id": "kheer", "name": "Kheer", "category": "Desserts", "price": 60, "image": "https://www.pngmart.com/files/1/Kheer-PNG-Pic.png" },
+  { "id": "masala-chai", "name": "Masala Chai", "category": "Drinks", "price": 20, "image": "https://www.pngmart.com/files/5/Tea-PNG-Transparent-Image.png" },
+  { "id": "cold-coffee", "name": "Cold Coffee", "category": "Drinks", "price": 89, "image": "https://www.pngmart.com/files/20/Iced-Coffee-PNG-Isolated-Photo.png" },
+  { "id": "sweet-lassi", "name": "Sweet Lassi", "category": "Drinks", "price": 49, "image": "https://www.pngmart.com/files/5/Lassi-PNG-Photos.png" }
+]
+
